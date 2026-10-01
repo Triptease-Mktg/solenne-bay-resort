@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <!--
+    HOTEL NAME: the property is called "Solenne Bay Resort" everywhere on this page.
+    To rename it, run ./rename.sh "New Name" (a plain find-and-replace of the
+    exact string "Solenne Bay Resort" across index.html). The name is kept as static
+    text on purpose so crawlers and capture tools read it without JavaScript.
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solenne Bay Resort | Beachfront Resort on Castellan Key, Florida</title>
+  <meta name="description" content="Solenne Bay Resort is a beachfront family and couples resort on Castellan Key, Florida. Two pools, a kids club, a spa, all-day dining and 180 rooms steps from the sand. Book direct for our best rate and free breakfast.">
+  <meta name="theme-color" content="#1a8cb0">
+  <link rel="canonical" href="https://triptease-mktg.github.io/solenne-bay-resort/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Solenne Bay Resort">
+  <meta property="og:title" content="Solenne Bay Resort | Beachfront Resort on Castellan Key, Florida">
+  <meta property="og:description" content="A beachfront resort on Castellan Key, Florida, with two pools, a kids club, a spa and all-day dining. Book direct for our best rate and free breakfast.">
+  <meta property="og:image" content="https://triptease-mktg.github.io/solenne-bay-resort/images/og-image.webp">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Solenne Bay Resort",
+    "description": "A beachfront family and couples resort on Castellan Key, Florida, with two pools, a kids club, a spa and all-day dining.",
+    "url": "https://triptease-mktg.github.io/solenne-bay-resort/",
+    "image": "https://triptease-mktg.github.io/solenne-bay-resort/images/hero.webp",
+    "logo": "https://triptease-mktg.github.io/solenne-bay-resort/favicon.svg",
+    "telephone": "+1-305-555-0127",
+    "priceRange": "$245 - $560",
+    "currenciesAccepted": "USD",
+    "checkinTime": "16:00",
+    "checkoutTime": "11:00",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4800 Solenne Bay Drive",
+      "addressLocality": "Castellan Key",
+      "addressRegion": "FL",
+      "postalCode": "33040",
+      "addressCountry": "US"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Beachfront", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Outdoor pools", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Kids club", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Spa", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "All-day dining", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Solenne Bay Resort home">
+        <svg class="brand-mark" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+          <circle cx="18" cy="18" r="17" fill="#1a8cb0"/>
+          <circle cx="18" cy="14" r="5.5" fill="#fff"/>
+          <path d="M6 24c3-2.5 6-2.5 9 0s6 2.5 9 0 6-2.5 9 0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M8 29c3-2.5 6-2.5 9 0s6 2.5 9 0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Solenne Bay Resort</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#rooms">Rooms</a>
+        <a href="#pools">Pools &amp; beach</a>
+        <a href="#family">Families</a>
+        <a href="#spa">Spa</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="#rooms">Book direct</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="images/hero.webp" alt="The infinity pool at Solenne Bay Resort, with palm trees and the turquoise bay beyond" width="1600" height="1000" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Castellan Key, Florida</p>
+        <h1 id="hero-title">Your toes in the sand by lunchtime</h1>
+        <p class="hero-lede">A beachfront resort for families and couples, with two pools, a kids club, a spa under the palms and a kitchen that is open from sunrise to the last cocktail. Book direct and breakfast is on us.</p>
+      </div>
+    </section>
+
+    <section class="booking-wrap" aria-label="Check availability">
+      <div class="container">
+        <form class="booking" action="#rooms" method="get">
+          <div class="field">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="field">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+          <div class="field">
+            <label for="guests">Adults</label>
+            <select id="guests" name="guests">
+              <option value="1">1 adult</option>
+              <option value="2" selected>2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="kids">Children</label>
+            <select id="kids" name="kids">
+              <option value="0" selected>0 children</option>
+              <option value="1">1 child</option>
+              <option value="2">2 children</option>
+              <option value="3">3 children</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Check availability</button>
+        </form>
+        <p class="booking-note">Best rate guaranteed when you book direct. Free cancellation up to 48 hours before arrival.</p>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Resort highlights">
+      <div class="container">
+        <ul class="feature-list">
+          <li id="pools">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/><path d="M3 19c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/><circle cx="17" cy="6" r="3"/></svg>
+            </span>
+            <strong>Right on the beach</strong>
+            <span>Half a mile of private sand, loungers and umbrellas included, paddleboards from the beach hut.</span>
+          </li>
+          <li>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="8" rx="4"/><path d="M7 11V7a2 2 0 0 1 2-2M15 11V7a2 2 0 0 0-2-2"/></svg>
+            </span>
+            <strong>Two pools</strong>
+            <span>A quiet infinity pool for grown-ups and a splash pool with a slide for everyone else.</span>
+          </li>
+          <li id="family">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3 20v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M15 20v-1.5a3.5 3.5 0 0 1 3.5-3.5H19a3 3 0 0 1 3 3v2"/></svg>
+            </span>
+            <strong>Kids club, ages 4 to 12</strong>
+            <span>Open 9 am to 5 pm every day. Snorkel lessons, sandcastle contests, movie nights.</span>
+          </li>
+          <li id="spa">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-2.5-7-6-7-10a7 7 0 0 1 14 0c0 4-3 7.5-7 10z"/><path d="M12 4v17M8 10c1.5 1 2.8 1.5 4 1.5s2.5-.5 4-1.5"/></svg>
+            </span>
+            <strong>Spa under the palms</strong>
+            <span>Six treatment rooms, two of them outdoors. Couples massages, facials, a sauna by the sea.</span>
+          </li>
+          <li>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16M6 13a6 6 0 0 1 12 0M3 17h18M12 7V5"/></svg>
+            </span>
+            <strong>All-day dining</strong>
+            <span>Breakfast from 6:30, poolside grill until sunset, Palma restaurant and the Tide bar until late.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="rooms" id="rooms" aria-labelledby="rooms-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Rooms &amp; suites</p>
+          <h2 id="rooms-title">Three ways to stay</h2>
+          <p class="section-lede">Every room has a private balcony or patio, a king bed or two queens, a big walk-in shower and blackout curtains for late mornings. Rates include breakfast for everyone in the room when you book direct.</p>
+        </div>
+
+        <div class="room-grid">
+          <article class="room-card">
+            <img src="images/room-garden.webp" alt="Garden Room at Solenne Bay Resort: a bright white bedroom with a king bed, blue throw and striped headboard" width="1600" height="1067" loading="lazy">
+            <div class="room-body">
+              <p class="room-tag">Great for couples</p>
+              <h3>Garden Room</h3>
+              <p>Ground floor, opening straight onto the lawn and a two-minute barefoot walk to the beach. King bed, a hammock on the patio and an outdoor shower.</p>
+              <ul class="room-meta">
+                <li>King bed</li>
+                <li>380 sq ft</li>
+                <li>Sleeps 2</li>
+              </ul>
+              <div class="room-foot">
+                <p class="price"><span class="price-from">from</span> <span class="price-amount">$245</span> <span class="price-unit">/ night</span></p>
+                <a class="btn btn-primary" href="#rooms">Book direct</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <img src="images/room-ocean.webp" alt="Ocean View Room at Solenne Bay Resort: a sitting area beside sliding doors onto a balcony over the sea" width="1600" height="1067" loading="lazy">
+            <div class="room-body">
+              <p class="room-tag">Most popular</p>
+              <h3>Ocean View Room</h3>
+              <p>Upper floors of the main building, facing the bay. A king bed, a sofa by the window, a deep balcony with two loungers and the sunrise doing the wake-up call.</p>
+              <ul class="room-meta">
+                <li>King bed</li>
+                <li>440 sq ft</li>
+                <li>Sleeps 3</li>
+              </ul>
+              <div class="room-foot">
+                <p class="price"><span class="price-from">from</span> <span class="price-amount">$385</span> <span class="price-unit">/ night</span></p>
+                <a class="btn btn-primary" href="#rooms">Book direct</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <img src="images/room-family.webp" alt="Family Suite at Solenne Bay Resort: a bedroom with a teal blanket and a green armchair opening onto a sea-facing balcony" width="1600" height="1067" loading="lazy">
+            <div class="room-body">
+              <p class="room-tag">Best for families</p>
+              <h3>Beachfront Family Suite</h3>
+              <p>Two bedrooms, two bathrooms and a living room with a kitchenette, right on the dunes. A king bed for the grown-ups, two queens for the kids, and a wide terrace for breakfast in pajamas.</p>
+              <ul class="room-meta">
+                <li>King + 2 queens</li>
+                <li>820 sq ft</li>
+                <li>Sleeps 6</li>
+              </ul>
+              <div class="room-foot">
+                <p class="price"><span class="price-from">from</span> <span class="price-amount">$560</span> <span class="price-unit">/ night</span></p>
+                <a class="btn btn-primary" href="#rooms">Book direct</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <p class="eyebrow">About the resort</p>
+        <h2>Easy days, early nights, and nobody checking the time</h2>
+        <p>Solenne Bay Resort sits on the sheltered side of Castellan Key, where the bay is calm enough for little swimmers and clear enough for snorkeling off the beach. The resort opened in 1989 as a cluster of thirty cottages and has grown, slowly, into 180 rooms spread across low buildings under the palms. Nothing here is taller than the trees.</p>
+          <p>Mornings start with breakfast on the terrace, which is included for direct bookers. From there the day is yours. The kids club takes the four-to-twelves from nine, the infinity pool stays quiet, the spa books up by lunchtime, and the beach hut hands out paddleboards, snorkels and sandcastle buckets until the sun goes down. Dinner is at Palma, our open-air restaurant, or at the poolside grill if nobody wants to change out of their swimsuit.</p>
+        <p>Key West is forty minutes down the Overseas Highway, Miami is three hours, and the airport shuttle meets every flight into Key West International. Book direct and we include breakfast, free cancellation up to 48 hours out, and a room upgrade when one is free on the day.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Solenne Bay Resort</p>
+        <p id="location">4800 Solenne Bay Drive, Castellan Key, FL 33040</p>
+      </div>
+      <div>
+        <p>Reservations open daily, 7 am to 11 pm Eastern</p>
+        <p><a href="tel:+13055550127">(305) 555-0127</a> &middot; <a href="mailto:hello@solennebay.example">hello@solennebay.example</a></p>
+      </div>
+      <p class="footer-legal">&copy; 2026 Solenne Bay Resort. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Default the booking widget to a stay three weeks out, five nights long.
+    (function () {
+      var fmt = function (d) { return d.toISOString().slice(0, 10); };
+      var a = new Date(); a.setDate(a.getDate() + 21);
+      var b = new Date(a); b.setDate(b.getDate() + 5);
+      document.getElementById('checkin').value = fmt(a);
+      document.getElementById('checkout').value = fmt(b);
+    })();
+  </script>
+</body>
+</html>
