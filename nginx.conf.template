@@ -1,0 +1,20 @@
+server {
+  listen ${PORT};
+  server_name _;
+  root /usr/share/nginx/html;
+  index index.html;
+
+  include /etc/nginx/mime.types;
+  types { image/webp webp; image/svg+xml svg svgz; }
+  default_type application/octet-stream;
+
+  gzip on;
+  gzip_types text/css application/javascript image/svg+xml application/json;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+  location ~* \.(webp|svg|css)$ {
+    add_header Cache-Control "public, max-age=3600";
+  }
+}
